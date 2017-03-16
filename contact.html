@@ -2,64 +2,60 @@
 <style>
 
 
-input [type=text] {
-	border: 2px solid black;
-	border-radius: 4px;
-}
- 
+
 body {
-	background-image:url(sunsetmirror.jpg);
-	background-repeat:no-repeat;
-	background-position: cover;
+	
+	background-color: #737373
 }
 
 
-
-
-
-
-}
 </style>
 <html>
+<title> Contact</title>
 <body>
 
+<div class="intrinsic-container">
+    <iframe src="https://docs.google.com/a/york.ac.uk/forms/d/e/1FAIpQLSfH9TJTaLiAkgLV-N8MJZmk8-oFwoh8KVYg5yMfIiv6Eyoksg/viewform?embedded=true" height= "700" width= "1000" marginheight="0" marginwidth="0">Loading...</iframe>
 
 
-<form>
-
-	<form action="mailto:hanapinsent@hotmail.com" method="post" enctype="text/plain">
-	
-	<fieldset>
-	<legend>Personal information:</legend>
-
-		First Name: <br>
-	<input type="text" name:"firstname"><br>
-		Last Name: <br>
-	<input type="text" name:"lastname"><br>
-		E-mail: <br>
-	<input type="text" name:"mail"><br>
-		Enquiry: <br>
-	<textarea name="Enquiry" rows="10"
-	cols ="30"> Enter your message here: </textarea><br>
-
-	<input type="Submit" value="Send">
-
-	<input type="reset" value="Reset">
+</div>
 
 
-	</fieldset>
-	
-</form>
 
 </body>
 </html>
 
 
 <script
-  src="https://code.jquery.com/jquery-3.1.1.js"
+  src="jquery.js"
   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
   crossorigin="anonymous"></script>
-<!--   if adding any jquery stuff add it in under this command or it won't work -->
+
+
+<!-- Activate responsiveness in the "child" page -->
+<script src="/js/jquery.responsiveframe.js"></script>
+<script>
+var ri =responsiveIframe();
+ri.allowResponsiveEmbedding();
+</script>
+
+<!--Corresponding code in the "parent page" -->
+<script src="/js/jquery.js"></script>
+<script src="/js/jquery.responsiveframe.js"></script>
+
+<script>
+  ;(function($){
+    $(functiom(){
+      $('#myIframeID').responsiveIframe({ xdomain: '*'});
+    });
+  })(jQuery);
+</script>
+
+
+
+
+
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

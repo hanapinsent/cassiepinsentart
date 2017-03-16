@@ -3,12 +3,13 @@
 
 
 <head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title> Cassie Pinsent Art</title>
+
 
 </head>
 
-<!--  add nav bar - wheres that gone?! also change background to black and add a slide show that fades various photos and paintings in and out across the middle of the page -->
+ 
 
 <style>
 
@@ -29,7 +30,7 @@
 		display: block;
 		color:black;
 		text-align:center;
-		padding:14px 16px;
+		padding:15px 16px;
 		text-decoration: none;
 	}	
 	/* Change the link color to #bf4040 on hover */
@@ -53,9 +54,80 @@
 
 
 	body {
-		background-color: black;
+		background-color:black;
 	
 	}
+
+* {box-sizing:border-box}
+
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #737373;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #737373;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #737373;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+	
+
 
 
 </style>
@@ -69,7 +141,7 @@
 
 	<ul>
 		<li><p><a href="file:///D:/Users/Student/Documents/GitHub/first_site/hanapinsent.github.io/homepage.html" target="_blank">Home</a></p></li>
-		<li><p><a href="html_About.asp" target="_blank">About</a></p></li>
+		<li><p><a href="file:///D:/Users/Student/Documents/GitHub/first_site/hanapinsent.github.io/About.html" target="_blank">About</a></p></li>
 		<li><p><a href="file:///D:/Users/Student/Documents/GitHub/first_site/hanapinsent.github.io/animals/animal%20photography.html" target="_blank">Animal Photography</a></p></li>
 		<li><p><a href="file:///D:/Users/Student/Documents/GitHub/first_site/hanapinsent.github.io/wildlife/wildlife%20photography.html" target="_blank">Wildlife Photography</a></p></li>
 		<li><p><a href="file:///D:/Users/Student/Documents/GitHub/first_site/hanapinsent.github.io/landscapes/landscape%20photography.html" target="_blank">Landscape Photography</a></p></li>
@@ -86,13 +158,154 @@
 	I have a first class honours degree from the University of Greenwich in Film Production, I worked as a photographer for many years in the Norfolk Broads, but also developed my skills as a hobby. Please explore my portfolio, and use the contact page in order to enquire about any commissioned work or to purchase prints. Online shop coming soon! </h2> 
 
 
-<script
-  src="https://code.jquery.com/jquery-3.1.1.js"
-  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-  crossorigin="anonymous"></script>
-<!--   if adding any jquery stuff add it in under this command or it won't work -->
+<div class="slideshow-container">
 
-<script>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 17</div>
+  <img src="alfie.jpg" style="width:100%">
+  <div class="text">Ginger Cat</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 17</div>
+  <img src="dill.jpg" style="width:100%">
+  <div class="text">Dog Portrait</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 17</div>
+  <img src="dog1.jpg" style="width:100%">
+  <div class="text">Dog Painting</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 17</div>
+  <img src="andrewmurphy.jpg" style="width:100%">
+  <div class="text">Andrex Puppy</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 17</div>
+  <img src="caterpillar.jpg" style="width:100%">
+  <div class="text">Hungry Caterpillar</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 17</div>
+  <img src="daisydog.jpg" style="width:100%">
+  <div class="text">Dog Portrait</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 17</div>
+  <img src="deer2.jpg" style="width:100%">
+  <div class="text">Waterdeer</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 17</div>
+  <img src="dragfly.jpg" style="width:100%">
+  <div class="text">Dragonfly</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 17</div>
+  <img src="flyingbee.jpg" style="width:100%">
+  <div class="text">Buzzy Bee</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 17</div>
+  <img src="hare.jpg" style="width:100%">
+  <div class="text">Hare</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">11 / 17</div>
+  <img src="horseeye.jpg" style="width:100%">
+  <div class="text">Wild Horse</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">12 / 17</div>
+  <img src="paintedman.jpg" style="width:100%">
+  <div class="text">The Road</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">13 / 17</div>
+  <img src="sammyandtommy.jpg" style="width:100%">
+  <div class="text">Tortoise meets Dog</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">14 / 17</div>
+  <img src="seeds.jpg" style="width:100%">
+  <div class="text">Seeded Sunset</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">15 / 17</div>
+  <img src="sunset2.jpg" style="width:100%">
+  <div class="text">Sunset</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">16 / 17</div>
+  <img src="sunsetmirror.jpg" style="width:100%">
+  <div class="text">Mirrored Sunset</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">17 / 17</div>
+  <img src="thistle.jpg" style="width:100%">
+  <div class="text">Thistle in the Sun</div>
+</div>
+
+
+
+
+<br>
+
+
+<div style="text-align:center">
+
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script
+  src="jquery.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous">
+
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -102,6 +315,31 @@
   ga('send', 'pageview');
 
 </script>
+
+<script>
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+
+</script>
+
 </body>
 </html>
 
